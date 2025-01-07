@@ -68,11 +68,11 @@ services:
       context: ../../
       dockerfile: ./packages/web/Dockerfile-self
       args:
-        - APP_ENV=prod
-        - BASE_URL=http://localhost:3000
-        - SERVER_BASE_URL=http://localhost:4000
-        - HIGHLIGHTS_BASE_URL=http://localhost:3000
-        - USE_NATIVE_PDF=true
+        - APP_ENV
+        - BASE_URL
+        - SERVER_BASE_URL
+        - HIGHLIGHTS_BASE_URL
+        - USE_NATIVE_PDF
     container_name: omnivore-web
     ports:
       - 3000:8080
